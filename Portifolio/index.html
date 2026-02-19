@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Cristopher França - Desenvolvedor e Fiscal de Caixa">
+    <meta name="keywords" content="Cristopher França, desenvolvedor, Python, JavaScript, TypeScript, portfolio">
+    <meta name="author" content="Cristopher França">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cristopher França - Desenvolvedor">
+    <meta property="og:description" content="Portfólio profissional - Desenvolvedor e Fiscal de Caixa">
+    
+    <title>Cristopher França - Desenvolvedor & Fiscal de Caixa</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="fundo-animado"></div>
+    <div class="grade-fundo"></div>
+    
+    <header>
+        <div class="logo">CF</div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button class="botao-menu-mobile" id="mobileMenuBtn" aria-label="Menu">☰</button>
+    </header>
+    
+    <div class="sobreposicao-mobile" id="mobileOverlay"></div>
+    <nav class="nav-mobile" id="mobileNav">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="conteudo-hero">
+            <div class="etiqueta-hero">✨ Desenvolvedor & Profissional em Tecnologia</div>
+            <h1>Olá, eu sou<br><span class="texto-gradiente">Cristopher França</span></h1>
+            <p class="descricao-hero">21 anos, apaixonado por tecnologia e desenvolvimento. Criador de soluções inovadoras e entusiasta de automação.</p>
+            
+            <div class="estatisticas-hero">
+                <div class="estatistica">
+                    <div class="numero-estatistica">21</div>
+                    <div class="label-estatistica">Anos de idade</div>
+                </div>
+                <div class="estatistica">
+                    <div class="numero-estatistica">3+</div>
+                    <div class="label-estatistica">Linguagens</div>
+                </div>
+                <div class="estatistica">
+                    <div class="numero-estatistica">2</div>
+                    <div class="label-estatistica">Projetos Principais</div>
+                </div>
+            </div>
+            
+            <div class="botoes-cta">
+                <a href="#projetos" class="botao botao-primario">Ver Projetos →</a>
+                <a href="#contato" class="botao botao-secundario">Entre em Contato</a>
+            </div>
+        </div>
+        
+        <div class="card-flutuante float-1">
+            <div class="icone-flutuante">💼</div>
+            <div class="label-flutuante">Cargo Atual</div>
+            <div class="valor-flutuante">Fiscal de Caixa</div>
+        </div>
+        
+        <div class="card-flutuante float-2">
+            <div class="icone-flutuante"><img src="assets/images/ayla.png" alt="AYLA Bot"></div>
+            <div class="label-flutuante">Projeto Destaque</div>
+            <div class="valor-flutuante">AYLA Bot</div>
+        </div>
+    </section>
+    
+    <section id="sobre">
+        <div class="cabecalho-secao fade-in">
+            <div class="label-secao">Conheça Mais</div>
+            <h2 class="titulo-secao">Sobre Mim</h2>
+            <p class="descricao-secao">Desenvolvedor em formação com experiência prática em Python, JavaScript e TypeScript. Atualmente trabalho como Fiscal de Caixa Remoto nas rede BigBox, onde desenvolvo habilidades de gestão, análise e resolução de problemas.</p>
+        </div>
+    </section>
+    
+    <section id="habilidades">
+        <div class="cabecalho-secao fade-in">
+            <div class="label-secao">Tecnologias</div>
+            <h2 class="titulo-secao">Minhas Habilidades</h2>
+            <p class="descricao-secao">Tecnologias e ferramentas que domino ou estou aprendendo</p>
+        </div>
+        
+        <div class="grade-habilidades">
+            <!-- Python -->
+            <div class="card-habilidade fade-in">
+                <div class="icone-habilidade">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                </div>
+                <h3 class="nome-habilidade">Python</h3>
+                <p class="nivel-habilidade">Conhecimento Básico</p>
+                <div class="barra-habilidade">
+                    <div class="progresso-habilidade" style="--progresso: 40%"></div>
+                </div>
+            </div>
+            
+            <!-- TypeScript -->
+            <div class="card-habilidade fade-in">
+                <div class="icone-habilidade">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                </div>
+                <h3 class="nome-habilidade">TypeScript</h3>
+                <p class="nivel-habilidade">Conhecimento Básico</p>
+                <div class="barra-habilidade">
+                    <div class="progresso-habilidade" style="--progresso: 10%"></div>
+                </div>
+            </div>
+            
+            <!-- Markdown -->
+            <div class="card-habilidade fade-in">
+                <div class="icone-habilidade">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="Markdown">
+                </div>
+                <h3 class="nome-habilidade">Markdown</h3>
+                <p class="nivel-habilidade">Conhecimento Intermediário</p>
+                <div class="barra-habilidade">
+                    <div class="progresso-habilidade" style="--progresso: 65%"></div>
+                </div>
+            </div>
+            
+            <!-- =================================================================
+                 ADICIONE NOVAS HABILIDADES AQUI
+                 =================================================================
+                 
+                 <div class="card-habilidade fade-in">
+                     <div class="icone-habilidade">
+                         <img src="URL_DO_ICONE" alt="Nome da Tecnologia">
+                     </div>
+                     <h3 class="nome-habilidade">Nome da Tecnologia</h3>
+                     <p class="nivel-habilidade">Nível (Básico/Intermediário/Avançado)</p>
+                     <div class="barra-habilidade">
+                         <div class="progresso-habilidade" style="--progresso: 50%"></div>
+                     </div>
+                 </div>
+                 
+                 =================================================================
+                 ÍCONES DISPONÍVEIS (https://devicon.dev/)
+                 =================================================================
+                 
+                 Frontend:
+                 • HTML5: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg
+                 • CSS3: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg
+                 • React: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg
+                 • Vue.js: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg
+                 • Angular: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg
+                 • Tailwind: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg
+                 • Bootstrap: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg
+                 • Sass: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg
+                 
+                 Backend:
+                 • Node.js: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg
+                 • Express: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg
+                 • Django: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg
+                 • Flask: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg
+                 • FastAPI: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg
+                 
+                 Banco de Dados:
+                 • MySQL: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg
+                 • PostgreSQL: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg
+                 • MongoDB: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg
+                 • Redis: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg
+                 • SQLite: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg
+                 
+                 DevOps & Ferramentas:
+                 • Git: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg
+                 • GitHub: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg
+                 • Docker: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg
+                 • Kubernetes: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg
+                 • Linux: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg
+                 • AWS: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg
+                 • Firebase: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg
+                 • Nginx: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg
+                 
+                 Editores & Design:
+                 • VS Code: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg
+                 • Figma: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg
+                 • Photoshop: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg
+                 
+                 Outras Linguagens:
+                 • C: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg
+                 • C++: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg
+                 • C#: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg
+                 • Java: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg
+                 • PHP: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg
+                 • Ruby: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg
+                 • Go: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg
+                 • Rust: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg
+                 
+                 DICA: Ajuste o valor de --progresso entre 0% e 100%
+                 ================================================================= -->
+        </div>
+    </section>
+    
+    <section id="projetos">
+        <div class="cabecalho-secao fade-in">
+            <div class="label-secao">Portfólio</div>
+            <h2 class="titulo-secao">Projetos em Destaque</h2>
+            <p class="descricao-secao">Soluções criativas e funcionais que desenvolvi</p>
+        </div>
+        
+        <div class="grade-projetos">
+            <!-- AYLA Bot - Projeto Principal -->
+            <div class="card-projeto destaque fade-in">
+                <div class="badge-destaque">⭐ Projeto Principal</div>
+                <div class="imagem-projeto"><img src="assets/images/ayla.png" alt="AYLA Bot"></div>
+                
+                <div class="conteudo-projeto">
+                    <h3>AYLA Bot</h3>
+                    <p class="descricao-projeto">Bot Discord completo com sistema de economia, loja virtual, moderação avançada, sistema de tickets e eventos especiais. Desenvolvido com arquitetura profissional utilizando design patterns e Clean Architecture.</p>
+                    
+                    <div class="tags-tecnologia">
+                        <span class="tag-tech">Python</span>
+                        <span class="tag-tech">Discord.py</span>
+                        <span class="tag-tech">JSON Database</span>
+                        <span class="tag-tech">Async/Await</span>
+                    </div>
+                    
+                    <div class="estatisticas-projeto">
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">10+</div>
+                            <div class="label-estatistica-projeto">Funcionalidades</div>
+                        </div>
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">5000+</div>
+                            <div class="label-estatistica-projeto">Linhas de Código</div>
+                        </div>
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">Em Desenvolvimento</div>
+                            <div class="label-estatistica-projeto">Status</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fiscal Remoto BigUltra - Documentação -->
+            <div class="card-projeto fade-in">
+                <div class="imagem-projeto">
+                    <img src="assets/images/fiscalremoto.jpg" alt="Fiscal Remoto BigUltra" style="object-fit: cover; object-position: center;">
+                </div>
+                
+                <div class="conteudo-projeto">
+                    <h3>Fiscal Remoto BigUltra</h3>
+                    <p class="descricao-projeto">
+                        Documentação técnica completa de procedimentos e funções para fiscalização remota do BigUltrabox. 
+                        Guia detalhado com atalhos de teclado, funções operacionais, processos de trabalho e material de 
+                        referência para operadores de caixa e equipe de suporte.
+                    </p>
+                    
+                    <div class="tags-tecnologia">
+                        <span class="tag-tech">Markdown</span>
+                        <span class="tag-tech">Documentação</span>
+                        <span class="tag-tech">GitHub</span>
+                        <span class="tag-tech">Processos</span>
+                    </div>
+                    
+                    <div class="estatisticas-projeto">
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">Completo</div>
+                            <div class="label-estatistica-projeto">Status</div>
+                        </div>
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">Guia Técnico</div>
+                            <div class="label-estatistica-projeto">Tipo</div>
+                        </div>
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">Open Source</div>
+                            <div class="label-estatistica-projeto">Licença</div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/CristophFranca/FiscalRemotoBigUltra" target="_blank" rel="noopener noreferrer" class="botao botao-primario" style="margin-top: 1.5rem; display: inline-block;">
+                        Ver no GitHub →
+                    </a>
+                </div>
+            </div>
+            
+            <!-- =================================================================
+                 ADICIONE NOVOS PROJETOS AQUI
+                 =================================================================
+                 
+                 <div class="card-projeto fade-in">
+                     <div class="imagem-projeto">
+                         <img src="assets/images/projeto.png" alt="Nome do Projeto">
+                     </div>
+                     
+                     <div class="conteudo-projeto">
+                         <h3>Nome do Projeto</h3>
+                         <p class="descricao-projeto">
+                             Descrição detalhada do que o projeto faz, 
+                             quais problemas resolve e suas principais features.
+                         </p>
+                         
+                         <div class="tags-tecnologia">
+                             <span class="tag-tech">Tecnologia 1</span>
+                             <span class="tag-tech">Tecnologia 2</span>
+                             <span class="tag-tech">Tecnologia 3</span>
+                         </div>
+                         
+                         <div class="estatisticas-projeto">
+                             <div class="estatistica-projeto">
+                                 <div class="valor-estatistica-projeto">Valor</div>
+                                 <div class="label-estatistica-projeto">Métrica</div>
+                             </div>
+                             <div class="estatistica-projeto">
+                                 <div class="valor-estatistica-projeto">Valor 2</div>
+                                 <div class="label-estatistica-projeto">Métrica 2</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 DICA: Para projeto destaque, adicione class="destaque" e o badge
+                 ================================================================= -->
+        </div>
+    </section>
+    
+    <section id="experiencia">
+        <div class="cabecalho-secao fade-in">
+            <div class="label-secao">Carreira</div>
+            <h2 class="titulo-secao">Experiência Profissional</h2>
+        </div>
+        
+        <div class="linha-tempo-experiencia">
+            <!-- Experiência Atual -->
+            <div class="item-experiencia fade-in">
+                <div class="cabecalho-experiencia">
+                    <div>
+                        <h3 class="titulo-experiencia">Fiscal de Caixa Remoto</h3>
+                        <div class="empresa-experiencia">Rede Big & Ultrabox </div>
+                    </div>
+                    <div class="data-experiencia">Atual</div>
+                </div>
+                <p class="descricao-experiencia">
+                    Responsável pelo monitoramento remoto de operações de caixa, garantindo 
+                    conformidade com procedimentos, prevenção de perdas e excelência no 
+                    atendimento ao cliente. Desenvolvimento de habilidades analíticas, atenção 
+                    aos detalhes e resolução rápida de problemas em ambiente dinâmico.
+                </p>
+            </div>
+            
+            <!-- =================================================================
+                 ADICIONE NOVAS EXPERIÊNCIAS AQUI
+                 =================================================================
+                 
+                 <div class="item-experiencia fade-in">
+                     <div class="cabecalho-experiencia">
+                         <div>
+                             <h3 class="titulo-experiencia">Cargo/Função</h3>
+                             <div class="empresa-experiencia">Nome da Empresa</div>
+                         </div>
+                         <div class="data-experiencia">Jan 2023 - Dez 2024</div>
+                     </div>
+                     <p class="descricao-experiencia">
+                         Descrição das suas responsabilidades, conquistas e 
+                         aprendizados durante este período.
+                     </p>
+                 </div>
+                 
+                 DICA: Coloque as experiências em ordem cronológica (mais recente primeiro)
+                 ================================================================= -->
+        </div>
+    </section>
+    
+    <section id="contato">
+        <div class="cabecalho-secao fade-in">
+            <div class="label-secao">Conecte-se</div>
+            <h2 class="titulo-secao">Entre em Contato</h2>
+            <p class="descricao-secao">Vamos conversar sobre projetos, oportunidades ou tecnologia!</p>
+        </div>
+        
+        <div class="grade-contato">
+            <!-- Email -->
+            <a href="/cdn-cgi/l/email-protection#cfaca0a1bbaebba0e1aca7bda6a6bc8fa0babba3a0a0a4e1aca0a2" class="card-contato fade-in">
+                <div class="icone-contato">📧</div>
+                <div class="label-contato">Email</div>
+                <div class="valor-contato"><span class="__cf_email__" data-cfemail="563539382237223978353e243f3f25163923223a39393d7835393b">[email&#160;protected]</span></div>
+            </a>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/ChriisIKTZ" target="_blank" rel="noopener noreferrer" class="card-contato fade-in">
+                <div class="icone-contato">💻</div>
+                <div class="label-contato">GitHub</div>
+                <div class="valor-contato">@ChriisIKTZ</div>
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer" class="card-contato fade-in">
+                <div class="icone-contato">💼</div>
+                <div class="label-contato">LinkedIn</div>
+                <div class="valor-contato">Cristopher França</div>
+            </a>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5561992691541" target="_blank" rel="noopener noreferrer" class="card-contato fade-in">
+                <div class="icone-contato">📱</div>
+                <div class="label-contato">WhatsApp</div>
+                <div class="valor-contato">Disponível</div>
+            </a>
+            
+            <!-- =================================================================
+                 ADICIONE MAIS FORMAS DE CONTATO AQUI
+                 =================================================================
+                 
+                 <a href="URL_OU_LINK" target="_blank" class="card-contato fade-in">
+                     <div class="icone-contato">🎮</div>
+                     <div class="label-contato">Nome da Rede</div>
+                     <div class="valor-contato">@seu_usuario</div>
+                 </a>
+                 
+                 ================================================================= -->
+        </div>
+    </section>
+    
+    <footer>
+        <p style="color: var(--gray); margin-bottom: 1rem;">Desenvolvido por Cristopher França</p>
+        <p style="color: var(--gray); font-size: 0.9rem;">© 2026 - Todos os direitos reservados</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
