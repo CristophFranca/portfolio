@@ -102,38 +102,6 @@ portfolio/
 
 ---
 
-## 🚀 Como Usar
-
-### Pré-requisitos
-
-Nenhum! Este é um site estático puro, sem dependências ou build.
-
-### Instalação Local
-
-```bash
-# Clone o repositório
-git clone https://github.com/CristophFranca/portfolio.git
-
-# Entre no diretório
-cd portfolio
-
-# Abra o index.html no navegador
-# Ou use um servidor local (recomendado):
-
-# Python 3
-python -m http.server 8000
-
-# Node.js (http-server)
-npx http-server
-
-# VS Code (Live Server)
-# Clique com botão direito no index.html > Open with Live Server
-```
-
-Acesse em `http://localhost:8000`
-
----
-
 ## 🎨 Personalização
 
 ### Cores
@@ -149,13 +117,6 @@ As cores do tema podem ser facilmente alteradas no arquivo `css/style.css`:
     --darker: #020617;        /* Azul muito escuro */
 }
 ```
-
-### Conteúdo
-
-1. **Informações pessoais** - Edite no `index.html` (seções com comentários claros)
-2. **Projetos** - Adicione seguindo o template em comentário
-3. **Habilidades** - Adicione novos cards de skill
-4. **Certificações** - Use o guia incluído no repositório
 
 ---
 
@@ -198,32 +159,6 @@ Sistema de Ponto de Venda para distribuidora de bebidas.
 
 ---
 
-## 🌐 Deploy
-
-Este portfólio pode ser hospedado em:
-
-### Opções Gratuitas
-
-- **GitHub Pages** - Recomendado para portfólios
-- **Netlify** - Deploy automático via Git
-- **Vercel** - Excelente performance
-- **Cloudflare Pages** - CDN global gratuito
-
-### Deploy Rápido no GitHub Pages
-
-```bash
-# 1. Faça push do código
-git add .
-git commit -m "Initial commit"
-git push origin main
-
-# 2. Vá em Settings > Pages
-# 3. Selecione branch main
-# 4. Acesse em username.github.io/portfolio
-```
-
----
-
 ## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Se você tem sugestões de melhorias:
@@ -238,14 +173,9 @@ Contribuições são bem-vindas! Se você tem sugestões de melhorias:
 
 ## 📝 To-Do / Roadmap
 
-- [ ] Adicionar modo escuro (dark mode)
 - [ ] Versão em inglês
 - [ ] Seção de blog/artigos
-- [ ] Integração com API do GitHub
-- [ ] Adicionar mais animações
-- [ ] PWA (Progressive Web App)
 - [ ] Sistema de comentários
-- [ ] Analytics e métricas
 
 ---
 
