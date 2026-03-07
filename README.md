@@ -4,16 +4,14 @@
 
 ### Desenvolvedor Júnior | Python | JavaScript | TypeScript
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Online-brightgreen?style=for-the-badge&logo=google-chrome&logoColor=white)](https://seusite.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/cristopher-frança)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Online-brightgreen?style=for-the-badge&logo=google-chrome&logoColor=white)](https://cristophfranca.github.io/portfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/cristopher-franca)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CristophFranca)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato.chriis@outlook.com)
 
-<img src="https://via.placeholder.com/800x400/0f172a/f59e0b?text=Portfolio+Preview" alt="Preview do Portfólio" width="800px">
-
 *Portfólio profissional desenvolvido com HTML5, CSS3 e JavaScript puro*
 
-[🌐 Ver Site Ao Vivo](#) • [📱 Demo](#) • [🐛 Reportar Bug](../../issues) • [💡 Sugerir Feature](../../issues)
+[🌐 Ver Site Ao Vivo](https://cristophfranca.github.io/portfolio) • [🐛 Reportar Bug](../../issues) • [💡 Sugerir Feature](../../issues)
 
 </div>
 
@@ -31,7 +29,7 @@ Este é meu portfólio pessoal, desenvolvido do zero para apresentar minhas habi
 - 🎯 SEO otimizado para melhor indexação
 - 🌙 Interface clean e profissional
 - 💼 Seção de projetos com casos reais
-- 🎓 Área dedicada para certificações
+- 🎓 Área dedicada para certificações com status visual
 - 📊 Animações on-scroll suaves
 
 ---
@@ -49,13 +47,13 @@ Este é meu portfólio pessoal, desenvolvido do zero para apresentar minhas habi
 
 ### 📦 Recursos Técnicos
 
-- **HTML5 Semântico** - Estrutura limpa e acessível
-- **CSS3 Moderno** - Flexbox, Grid, Custom Properties
-- **JavaScript Vanilla** - Sem dependências externas
-- **Intersection Observer API** - Animações on-scroll
-- **Responsive Design** - Mobile-first approach
-- **Performance** - Lazy loading de imagens
-- **SEO** - Meta tags e Open Graph otimizados
+- **HTML5 Semântico** — Estrutura limpa e acessível
+- **CSS3 Moderno** — Flexbox, Grid, Custom Properties, animações
+- **Tipografia** — [Syne](https://fonts.google.com/specimen/Syne) (display) + [DM Sans](https://fonts.google.com/specimen/DM+Sans) (corpo) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (código)
+- **JavaScript Vanilla** — Sem dependências externas
+- **Intersection Observer API** — Animações on-scroll
+- **Responsive Design** — Mobile-first approach
+- **SEO** — Meta tags e Open Graph otimizados
 
 ---
 
@@ -63,13 +61,13 @@ Este é meu portfólio pessoal, desenvolvido do zero para apresentar minhas habi
 
 ### 🏠 Seções Principais
 
-- **Hero Section** - Apresentação impactante com estatísticas
-- **Sobre Mim** - Introdução profissional e objetivos
-- **Habilidades** - Skills técnicas com barra de progresso
-- **Certificações** - Cursos e certificados conquistados
-- **Projetos** - Portfólio de trabalhos realizados
-- **Experiência** - Histórico profissional
-- **Contato** - Múltiplos canais de comunicação
+- **Hero Section** — Apresentação com crachá animado e estatísticas
+- **Sobre Mim** — Introdução profissional e objetivos
+- **Habilidades** — Stack técnica com ícones e competências profissionais
+- **Certificações** — Cursos e certificados com status (Concluído / Em progresso / Planejado)
+- **Projetos** — Portfólio de trabalhos realizados com links
+- **Experiência** — Histórico profissional em linha do tempo
+- **Contato** — Múltiplos canais de comunicação
 
 ### ⚡ Interações
 
@@ -77,8 +75,10 @@ Este é meu portfólio pessoal, desenvolvido do zero para apresentar minhas habi
 - Navegação suave entre seções
 - Animações de fade-in ao scroll
 - Efeitos hover nos cards
-- Header com sombra dinâmica
-- Links com feedback visual
+- Header com sombra dinâmica no scroll
+- Typewriter animation no nome
+- Contadores animados nas estatísticas
+- Badge de disponibilidade configurável em `js/main.js`
 
 ---
 
@@ -86,35 +86,75 @@ Este é meu portfólio pessoal, desenvolvido do zero para apresentar minhas habi
 
 ```
 portfolio/
-├── 📄 index.html              # Página principal
+├── 📄 index.html
 ├── 📁 css/
-│   └── style.css              # Estilos globais
+│   └── style.css
 ├── 📁 js/
-│   └── main.js                # Scripts e interações
+│   └── main.js
 └── 📁 assets/
     ├── 📁 icons/
-    │   └── favicon.ico        # Ícone do site
-    └── 📁 images/
-        ├── ayla.png           # Projeto AYLA Bot
-        ├── favicon.png        # Favicon PNG
-        └── fiscalremoto.jpeg  # Projeto Fiscal Remoto
+    │   └── favicon.ico
+    ├── 📁 images/
+    │   ├── foto_perfil.jpeg
+    │   ├── ayla.png
+    │   ├── SiXPDV.jpeg
+    │   ├── fiscalremoto.png
+    │   └── favicon.png
+    └── 📁 certificates/
+        └── certificado_web_designer.pdf
 ```
 
 ---
 
-## 🎨 Personalização
+## 🚀 Como Usar
 
-### Cores
+### Pré-requisitos
 
-As cores do tema podem ser facilmente alteradas no arquivo `css/style.css`:
+Nenhum! Site estático puro, sem dependências ou build.
+
+### Instalação Local
+
+```bash
+# Clone o repositório
+git clone https://github.com/CristophFranca/portfolio.git
+
+# Entre no diretório
+cd portfolio
+
+# Abra com um servidor local (recomendado):
+
+# Python 3
+python -m http.server 8000
+
+# VS Code — botão direito no index.html > Open with Live Server
+```
+
+Acesse em `http://localhost:8000`
+
+---
+
+## ⚙️ Personalização
+
+### Badge de Disponibilidade
+
+No arquivo `js/main.js`, linha 5:
+
+```js
+// 🟢 true = disponível | false = indisponível
+const DISPONIVEL_PARA_TRABALHO = true;
+```
+
+### Cores do Tema
+
+No arquivo `css/style.css`:
 
 ```css
 :root {
-    --primary: #f59e0b;      /* Laranja principal */
-    --primary-dark: #d97706;  /* Laranja escuro */
-    --secondary: #fbbf24;     /* Amarelo */
-    --dark: #0f172a;          /* Azul escuro */
-    --darker: #020617;        /* Azul muito escuro */
+    --gold:    #f59e0b;   /* Dourado principal */
+    --gold-lt: #fbbf24;   /* Dourado claro */
+    --gold-dk: #d97706;   /* Dourado escuro */
+    --amber:   #fb923c;   /* Âmbar accent */
+    --dark:    #0a0f1e;   /* Fundo principal */
 }
 ```
 
@@ -123,72 +163,48 @@ As cores do tema podem ser facilmente alteradas no arquivo `css/style.css`:
 ## 📊 Projetos em Destaque
 
 ### 🤖 AYLA Bot
-Bot Discord completo com sistema de economia, moderação e eventos especiais.
-- **Tech Stack:** Python, Discord.py, JSON Database
-- **Status:** Em desenvolvimento ativo
-- **Destaque:** +10 funcionalidades, +5000 linhas de código
+Bot Discord completo com personalidade própria, integração com APIs externas, comandos interativos e sistema de moderação.
+- **Tech Stack:** Python, Discord.py, APIs
+- **Status:** Ativo
+- [Ver no GitHub →](https://github.com/CristophFranca/Ayla-BOT)
+
+### 🛒 SiX PDV
+Sistema de Ponto de Venda completo para minha distribuidora de bebidas. Gerenciamento de estoque, vendas, caixa e relatórios.
+- **Tech Stack:** Python, Flask, SQLite
+- **Status:** Em produção
+- [Ver Demo →](https://cristophfranca.github.io/SiX_PDV) • [Ver no GitHub →](https://github.com/CristophFranca/SiX_PDV)
 
 ### 📋 Fiscal Remoto BigUltra
-Documentação técnica completa de procedimentos de fiscalização remota.
+Documentação técnica completa de procedimentos de fiscalização remota de caixa.
 - **Tech Stack:** Markdown, GitHub
 - **Status:** Completo e em uso
-- **Destaque:** Guia técnico open source
-
-### 🛒 Sistema PDV
-Sistema de Ponto de Venda para distribuidora de bebidas.
-- **Tech Stack:** Python, SQLite, Tkinter
-- **Status:** Em produção
-- **Destaque:** Software real usado em negócio próprio
+- [Ver no GitHub →](https://github.com/CristophFranca/FiscalRemotoBigUltra)
 
 ---
 
-## 📈 Performance
+## 🌐 Deploy
 
-<div align="center">
+### GitHub Pages (Recomendado)
 
-| Métrica | Score |
-|---------|-------|
-| Performance | 🟢 95+ |
-| Acessibilidade | 🟢 100 |
-| Melhores Práticas | 🟢 95+ |
-| SEO | 🟢 100 |
+```bash
+git add .
+git commit -m "chore: update portfolio"
+git push origin main
 
-*Scores do Google Lighthouse*
+# Settings > Pages > Branch: main > Save
+# Acesse: https://cristophfranca.github.io/portfolio
+```
 
-</div>
-
----
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Se você tem sugestões de melhorias:
-
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/MinhaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/MinhaFeature`)
-5. Abra um Pull Request
-
----
-
-## 📝 To-Do / Roadmap
-
-- [ ] Versão em inglês
-- [ ] Seção de blog/artigos
-- [ ] Sistema de comentários
+### Outras opções gratuitas
+- **Netlify** — Deploy automático via Git
+- **Vercel** — Excelente performance
+- **Cloudflare Pages** — CDN global gratuito
 
 ---
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-Você é livre para:
-- ✅ Usar este código como referência
-- ✅ Estudar e aprender com ele
-- ✅ Modificar para seu próprio portfólio
-
-**Por favor, dê os créditos apropriados se usar este código! 🙏**
 
 ---
 
@@ -200,9 +216,7 @@ Você é livre para:
 
 **Desenvolvedor Júnior | 21 anos | Brasília, DF**
 
-Apaixonado por tecnologia e desenvolvimento. Criando soluções práticas através do código, com foco em sistemas que resolvem problemas reais.
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/cristopher-frança)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/cristopher-franca)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)](https://github.com/CristophFranca)
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:contato.chriis@outlook.com)
 [![WhatsApp](https://img.shields.io/badge/-WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/5561992691541)
@@ -211,32 +225,11 @@ Apaixonado por tecnologia e desenvolvimento. Criando soluções práticas atrav�
 
 ---
 
-## 💬 Contato
-
-Gostou do projeto? Tem alguma dúvida ou sugestão?
-
-- 📧 **Email:** contato.chriis@outlook.com
-- 💼 **LinkedIn:** [cristopher-frança](https://linkedin.com/in/cristopher-frança)
-- 🐱 **GitHub:** [@CristophFranca](https://github.com/CristophFranca)
-- 📱 **WhatsApp:** [Enviar mensagem](https://wa.me/5561992691541)
-
----
-
-## 🙏 Agradecimentos
-
-- Fontes: [Google Fonts](https://fonts.google.com/) - Outfit & JetBrains Mono
-- Ícones: [Devicon](https://devicon.dev/) - Ícones de tecnologias
-- Inspiração: Comunidade dev brasileira 🇧🇷
-
----
-
 <div align="center">
-
-### ⭐ Se este projeto te ajudou, deixe uma estrela!
 
 **Desenvolvido com 💛 por Cristopher França**
 
-*Última atualização: Fevereiro 2026*
+*Última atualização: Março 2026*
 
 [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=CristophFranca.portfolio)](https://github.com/CristophFranca)
 

@@ -20,7 +20,7 @@
     <div class="grade-fundo"></div>
     
     <header>
-        <div class="logo">CF</div>
+        <a href="#inicio" class="logo"><span></span>&lt;/&gt;<span></span></a>
         <nav>
             <a href="#sobre">Sobre</a>
             <a href="#certificacoes">Certificações</a>
@@ -44,7 +44,7 @@
     <div class="overlay-mobile" id="mobileOverlay"></div>
     
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="conteudo-hero">
             <div class="etiqueta-hero">✨ Desenvolvedor Júnior</div>
             <div class="badge-disponivel">
@@ -56,15 +56,15 @@
             
             <div class="estatisticas-hero">
                 <div class="estatistica">
-                    <div class="numero-estatistica">2+</div>
+                    <div class="numero-estatistica" data-target="2">0</div>
                     <div class="label-estatistica">Anos desenvolvendo</div>
                 </div>
                 <div class="estatistica">
-                    <div class="numero-estatistica">3+</div>
+                    <div class="numero-estatistica" data-target="5">0</div>
                     <div class="label-estatistica">Linguagens</div>
                 </div>
                 <div class="estatistica">
-                    <div class="numero-estatistica">3</div>
+                    <div class="numero-estatistica" data-target="3">0</div>
                     <div class="label-estatistica">Projetos Principais</div>
                 </div>
             </div>
@@ -75,16 +75,31 @@
             </div>
         </div>
         
-        <div class="card-flutuante float-1">
-            <div class="icone-flutuante">💼</div>
-            <div class="label-flutuante">Cargo Atual</div>
-            <div class="valor-flutuante">Fiscal de Caixa</div>
-        </div>
-        
-        <div class="card-flutuante float-2">
-            <div class="icone-flutuante"><img src="assets/images/ayla.png" alt="AYLA Bot"></div>
-            <div class="label-flutuante">Projeto Destaque</div>
-            <div class="valor-flutuante">AYLA Bot</div>
+        <!-- CRACHÁ -->
+        <div class="cracha-wrapper">
+            <div class="cracha-corda-esq"></div>
+            <div class="cracha-corda-dir"></div>
+            <div class="cracha-card">
+                <div class="cracha-header">
+                    <div class="cracha-logo-text">CF</div>
+                    <div class="cracha-empresa-nome">Dev Junior</div>
+                </div>
+                <div class="cracha-divider"></div>
+                <div class="cracha-foto-area">
+                    <div class="cracha-foto-container">
+                        <img src="assets/images/foto_perfil.jpeg" alt="Cristopher França" class="cracha-foto" id="crachafoto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="cracha-foto-fallback">CF</div>
+                    </div>
+                </div>
+                <div class="cracha-info">
+                    <div class="cracha-nome">Cristopher França</div>
+                </div>
+                <div class="cracha-divider"></div>
+                <div class="cracha-barcode-area">
+                    <div class="cracha-barras"></div>
+                    <div class="cracha-id-num">ID · 2024·CF·DEV</div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -93,7 +108,34 @@
         <div class="cabecalho-secao fade-in">
             <div class="label-secao">Conheça Mais</div>
             <h2 class="titulo-secao">Sobre Mim</h2>
-            <p class="descricao-secao">Sou Desenvolvedor Júnior em constante aprendizado, com experiência prática em Python, JavaScript e TypeScript. Paralelamente à minha atuação como Fiscal de Caixa Remoto na rede BigBox, onde desenvolvo habilidades de gestão, análise e resolução de problemas, aplico meus conhecimentos em tecnologia criando sistemas reais para solucionar necessidades do dia a dia. <br><br> Minha trajetória combina experiência em operações administrativas e atendimento ao cliente, o que me permite unir visão prática de processos empresariais à capacidade de construir soluções digitais. Tenho facilidade em aprender novas ferramentas, iniciativa para propor melhorias e foco em resultados, sempre buscando evoluir como profissional de TI e contribuir para o crescimento das equipes e empresas.</p>
+        </div>
+        <div class="sobre-layout fade-in">
+            <div class="sobre-texto">
+                <p>Sou Desenvolvedor Júnior em constante aprendizado, com experiência prática em Python, JavaScript e TypeScript. Paralelamente à minha atuação como Fiscal de Caixa Remoto na rede BigBox, aplico meus conhecimentos em tecnologia criando sistemas reais para solucionar necessidades do dia a dia.</p>
+                <p>Minha trajetória combina experiência em operações administrativas e atendimento ao cliente, o que me permite unir visão prática de processos empresariais à capacidade de construir soluções digitais. Tenho facilidade em aprender novas ferramentas, iniciativa para propor melhorias e foco em resultados.</p>
+            </div>
+            <div class="sobre-destaques">
+                <div class="destaque-card">
+                    <div class="destaque-icone">🎯</div>
+                    <div class="destaque-titulo">Foco em resultado</div>
+                    <div class="destaque-desc">Sistemas que resolvem problemas reais</div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-icone">🔄</div>
+                    <div class="destaque-titulo">Aprendizado contínuo</div>
+                    <div class="destaque-desc">Sempre explorando novas tecnologias</div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-icone">🤝</div>
+                    <div class="destaque-titulo">Visão de negócio</div>
+                    <div class="destaque-desc">Experiência real em operações empresariais</div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-icone">⚡</div>
+                    <div class="destaque-titulo">Automação</div>
+                    <div class="destaque-desc">Transformando processos manuais em código</div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -106,10 +148,43 @@
         </div>
         
         <div class="grade-certificacoes">
-            <div class="card-certificacao fade-in">
+
+            <!-- QualificaDF -->
+            <div class="card-certificacao card-certificacao-destaque fade-in">
+                <div class="cert-icon-area">
+                    <div class="cert-icon-circle">🎓</div>
+                    <a href="assets/certificates/certificado_web_designer.pdf" target="_blank" rel="noopener noreferrer" class="cert-ver-btn">
+                        🔍 Ver certificado completo
+                    </a>
+                </div>
                 <div class="conteudo-certificacao">
+                    <div class="cert-status cert-status-ok">✓ Concluído</div>
+                    <h3 class="titulo-certificacao">Designer Gráfico Básico (Web)</h3>
+                    <div class="instituicao-certificacao">QualificaDF — Secretaria SEDET/DF</div>
+                    <div class="info-certificacao">
+                        <span class="data-certificacao">📅 Junho 2024</span>
+                        <span class="carga-certificacao destaque-carga">⏱️ 240h</span>
+                    </div>
+                    <div class="topicos-certificacao">
+                        <span class="topico">Web Design</span>
+                        <span class="topico">Design Gráfico</span>
+                        <span class="topico">UI/UX</span>
+                        <span class="topico">Criação Visual</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="card-certificacao fade-in">
+                <div class="cert-icon-area">
+                    <div class="cert-icon-circle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                </div>
+                <div class="conteudo-certificacao">
+                    <div class="cert-status cert-status-wip">⏳ Em progresso</div>
                     <h3 class="titulo-certificacao">Python 3+ Completo</h3>
-                    <div class="instituicao-certificacao">Udemy - Prof. Luiz Otávio Miranda</div>
+                    <div class="instituicao-certificacao">Udemy — Prof. Luiz Otávio Miranda</div>
                     <div class="info-certificacao">
                         <span class="data-certificacao">📅 Fevereiro 2026</span>
                         <span class="carga-certificacao">⏱️ 141,5h</span>
@@ -123,133 +198,136 @@
                         <span class="topico">Design Patterns</span>
                     </div>
                 </div>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="botao-certificado">Em progresso...</a>
             </div>
-            
-            <div class="card-certificacao card-certificacao-destaque fade-in">
-                <div class="conteudo-certificacao">
-                    <h3 class="titulo-certificacao">Designer Gráfico Básico (Web)</h3>
-                    <div class="instituicao-certificacao">QualificaDF — Secretaria SEDET/DF</div>
-                    <div class="info-certificacao">
-                        <span class="data-certificacao">📅 Junho 2024</span>
-                        <span class="carga-certificacao destaque-carga">⏱️ 240 horas/aula</span>
-                    </div>
-                    <div class="topicos-certificacao">
-                        <span class="topico">Web Design</span>
-                        <span class="topico">Design Gráfico</span>
-                        <span class="topico">Criação Visual</span>
-                        <span class="topico">Projetos Web</span>
-                        <span class="topico">UI/UX</span>
+
+            <!-- SQL planejado -->
+            <div class="card-certificacao cert-planejado fade-in">
+                <div class="cert-icon-area">
+                    <div class="cert-icon-circle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
                     </div>
                 </div>
-                <a href="assets/certificates/certificado_web_designer.pdf" target="_blank" rel="noopener noreferrer" class="botao-certificado">Ver Certificado →</a>
+                <div class="conteudo-certificacao">
+                    <div class="cert-status cert-status-plan">🎯 Planejado</div>
+                    <h3 class="titulo-certificacao">SQL do Básico ao Avançado</h3>
+                    <div class="instituicao-certificacao" style="opacity:.55">A definir</div>
+                    <div class="info-certificacao">
+                        <span class="data-certificacao">📅 2026</span>
+                        <span class="carga-certificacao">⏱️ Previsto</span>
+                    </div>
+                    <div class="topicos-certificacao">
+                        <span class="topico">SELECT / JOIN</span>
+                        <span class="topico">Subqueries</span>
+                        <span class="topico">Índices</span>
+                        <span class="topico">PostgreSQL</span>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- HABILIDADES -->
     <section id="habilidades">
         <div class="cabecalho-secao fade-in">
-            <div class="label-secao">Tecnologias</div>
+            <div class="label-secao">Competências</div>
             <h2 class="titulo-secao">Minhas Habilidades</h2>
-            <p class="descricao-secao">Tecnologias e ferramentas que domino ou estou aprendendo</p>
+            <p class="descricao-secao">Tecnologias, ferramentas e competências profissionais</p>
         </div>
-        
-        <div class="carrossel-habilidades">
-            <button class="btn-carrossel btn-prev" aria-label="Anterior">&#8249;</button>
-            <div class="carrossel-track-wrapper">
-                <div class="carrossel-track">
-                    <div class="card-habilidade">
-                        <div class="icone-habilidade">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                        </div>
-                        <h3 class="nome-habilidade">Python</h3>
-                        <p class="nivel-habilidade">Conhecimento Básico</p>
-                        <div class="barra-habilidade">
-                            <div class="progresso-habilidade" style="--progresso: 35%"></div>
-                        </div>
-                    </div>
-                    <div class="card-habilidade">
-                        <div class="icone-habilidade">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                        </div>
-                        <h3 class="nome-habilidade">HTML / CSS</h3>
-                        <p class="nivel-habilidade">Conhecimento Intermediário</p>
-                        <div class="barra-habilidade">
-                            <div class="progresso-habilidade" style="--progresso: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="card-habilidade">
-                        <div class="icone-habilidade">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                        </div>
-                        <h3 class="nome-habilidade">JavaScript</h3>
-                        <p class="nivel-habilidade">Conhecimento Básico</p>
-                        <div class="barra-habilidade">
-                            <div class="progresso-habilidade" style="--progresso: 35%"></div>
-                        </div>
-                    </div>
-                    <div class="card-habilidade">
-                        <div class="icone-habilidade">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
-                        </div>
-                        <h3 class="nome-habilidade">TypeScript</h3>
-                        <p class="nivel-habilidade">Conhecimento Básico</p>
-                        <div class="barra-habilidade">
-                            <div class="progresso-habilidade" style="--progresso: 35%"></div>
-                        </div>
-                    </div>
-                    <div class="card-habilidade">
-                        <div class="icone-habilidade">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="Markdown">
-                        </div>
-                        <h3 class="nome-habilidade">Markdown</h3>
-                        <p class="nivel-habilidade">Conhecimento Intermediário</p>
-                        <div class="barra-habilidade">
-                            <div class="progresso-habilidade" style="--progresso: 70%"></div>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="skills-grupo-label fade-in">⚙️ Tecnologias</div>
+        <div class="grade-icones-skills fade-in">
+            <div class="icone-skill" title="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <span>Python</span>
             </div>
-            <button class="btn-carrossel btn-next" aria-label="Próximo">&#8250;</button>
+            <div class="icone-skill" title="HTML5">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                <span>HTML5</span>
+            </div>
+            <div class="icone-skill" title="CSS3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                <span>CSS3</span>
+            </div>
+            <div class="icone-skill" title="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="icone-skill" title="TypeScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                <span>TypeScript</span>
+            </div>
+            <div class="icone-skill" title="Markdown">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="Markdown">
+                <span>Markdown</span>
+            </div>
+            <div class="icone-skill" title="Git">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <span>Git</span>
+            </div>
+            <div class="icone-skill" title="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+            <div class="icone-skill" title="SQLite">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                <span>SQLite</span>
+            </div>
+            <div class="icone-skill" title="VS Code">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                <span>VS Code</span>
+            </div>
         </div>
-        <div class="carrossel-dots"></div>
+
+        <div class="skills-grupo-label fade-in" style="margin-top: 3rem;">💼 Competências Profissionais</div>
+        <div class="grade-competencias fade-in">
+            <div class="tag-competencia">📞 Atendimento Remoto</div>
+            <div class="tag-competencia">🖥️ Sistemas Corporativos (Darwin/Inwave)</div>
+            <div class="tag-competencia">🔍 Análise de Dados e Imagens</div>
+            <div class="tag-competencia">🛡️ Prevenção de Fraudes</div>
+            <div class="tag-competencia">📋 Auditoria Operacional</div>
+            <div class="tag-competencia">⚡ Resolução de Problemas</div>
+            <div class="tag-competencia">📊 Monitoramento Financeiro</div>
+            <div class="tag-competencia">🗂️ Registro de Ocorrências</div>
+            <div class="tag-competencia">🤝 Comunicação Clara</div>
+            <div class="tag-competencia">⚖️ Ética Profissional</div>
+            <div class="tag-competencia">🔎 Atenção aos Detalhes</div>
+            <div class="tag-competencia">📐 Organização</div>
+        </div>
     </section>
     
     <!-- PROJETOS -->
     <section id="projetos">
         <div class="cabecalho-secao fade-in">
             <div class="label-secao">Portfólio</div>
-            <h2 class="titulo-secao">Projetos em Destaque</h2>
-            <p class="descricao-secao">Soluções criativas e funcionais que desenvolvi</p>
+            <h2 class="titulo-secao">Projetos</h2>
+            <p class="descricao-secao">Soluções reais desenvolvidas com propósito</p>
         </div>
-        
+
         <div class="grade-projetos">
-            <div class="card-projeto destaque fade-in">
-                <div class="badge-destaque">⭐ Projeto Principal</div>
+            <div class="card-projeto featured fade-in">
                 <div class="imagem-projeto"><img src="assets/images/ayla.png" alt="AYLA Bot"></div>
                 <div class="conteudo-projeto">
                     <h3>AYLA Bot</h3>
-                    <p class="descricao-projeto">Bot Discord completo com sistema de economia, loja virtual, moderação avançada, sistema de tickets e eventos especiais. Desenvolvido com arquitetura profissional utilizando design patterns e Clean Architecture.</p>
+                    <p class="descricao-projeto">Bot para Discord desenvolvido em Python com personalidade própria. Integração com APIs externas, comandos interativos, sistema de moderação e entretenimento para servidores. Projeto completo de automação e interação social digital.</p>
                     <div class="tags-tecnologia">
                         <span class="tag-tech">Python</span>
                         <span class="tag-tech">Discord.py</span>
-                        <span class="tag-tech">JSON Database</span>
-                        <span class="tag-tech">Async/Await</span>
+                        <span class="tag-tech">APIs</span>
+                        <span class="tag-tech">Automação</span>
                     </div>
                     <div class="estatisticas-projeto">
                         <div class="estatistica-projeto">
-                            <div class="valor-estatistica-projeto">10+</div>
-                            <div class="label-estatistica-projeto">Funcionalidades</div>
-                        </div>
-                        <div class="estatistica-projeto">
-                            <div class="valor-estatistica-projeto">5000+</div>
-                            <div class="label-estatistica-projeto">Linhas de Código</div>
-                        </div>
-                        <div class="estatistica-projeto">
-                            <div class="valor-estatistica-projeto">Em Desenvolvimento</div>
+                            <div class="valor-estatistica-projeto">Ativo</div>
                             <div class="label-estatistica-projeto">Status</div>
+                        </div>
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">Discord</div>
+                            <div class="label-estatistica-projeto">Plataforma</div>
+                        </div>
+                        <div class="estatistica-projeto">
+                            <div class="valor-estatistica-projeto">Python</div>
+                            <div class="label-estatistica-projeto">Linguagem</div>
                         </div>
                     </div>
                     <a href="https://github.com/CristophFranca/Ayla-BOT" target="_blank" rel="noopener noreferrer" class="botao botao-primario" style="margin-top: 1.5rem; display: inline-block;">Ver no GitHub →</a>
@@ -264,7 +342,7 @@
                     <div class="tags-tecnologia">
                         <span class="tag-tech">Python</span>
                         <span class="tag-tech">SQLite</span>
-                        <span class="tag-tech">Tkinter</span>
+                        <span class="tag-tech">Flask</span>
                         <span class="tag-tech">Gestão</span>
                     </div>
                     <div class="estatisticas-projeto">
@@ -353,7 +431,7 @@
                     <div class="data-experiencia">Outubro 2024</div>
                 </div>
                 <p class="descricao-experiencia">
-                    Responsável pelo atendimento ao público durante o evento, garantindo agilidade e precisão no registro de compras e recebimento de pagamentos. Atuação direta no suporte aos clientes, esclarecendo dúvidas, solucionando reclamações e atendendo solicitações diversas, sempre com foco na excelência do atendimento e na satisfação do público.
+                    Responsável pelo atendimento ao público durante o evento, garantindo agilidade e precisão no registro de compras e recebimento de pagamentos. Atuação direta no suporte aos clientes, esclarecendo dúvidas, solucionando reclamações e atendendo solicitações diversas.
                 </p>
             </div>
         </div>
@@ -367,32 +445,44 @@
             <p class="descricao-secao">Vamos conversar sobre projetos, oportunidades ou tecnologia!</p>
         </div>
 
-        <div class="grade-contato">
-            <a href="mailto:contato.chriis@outlook.com" class="card-contato fade-in">
-                <div class="icone-contato">📧</div>
-                <div class="label-contato">Email</div>
-                <div class="valor-contato">contato.chriis@outlook.com</div>
-            </a>
-
-            <a href="https://github.com/CristophFranca" target="_blank" rel="noopener noreferrer" class="card-contato fade-in">
-                <div class="icone-contato">💻</div>
-                <div class="label-contato">GitHub</div>
-                <div class="valor-contato">@CristophFranca</div>
-            </a>
-
-            <a href="https://linkedin.com/in/cristopher-franca" target="_blank" rel="noopener noreferrer" class="card-contato fade-in">
-                <div class="icone-contato">💼</div>
-                <div class="label-contato">LinkedIn</div>
-                <div class="valor-contato">Cristopher França</div>
-            </a>
+        <div class="contato-layout fade-in">
+            <div class="contato-cta">
+                <h3 class="contato-cta-titulo">Aberto a novas oportunidades</h3>
+                <p class="contato-cta-texto">Seja um projeto freelance, uma vaga de estágio ou uma oportunidade de emprego — estou sempre disposto a conversar. Respondo rápido! 🚀</p>
+                <a href="mailto:contato.chriis@outlook.com" class="botao botao-primario botao-contato-principal">
+                    📧 Enviar Email
+                </a>
+            </div>
+            <div class="grade-contato">
+                <a href="mailto:contato.chriis@outlook.com" class="card-contato">
+                    <div class="icone-contato">📧</div>
+                    <div class="label-contato">Email</div>
+                    <div class="valor-contato">contato.chriis@outlook.com</div>
+                </a>
+                <a href="https://github.com/CristophFranca" target="_blank" rel="noopener noreferrer" class="card-contato">
+                    <div class="icone-contato">💻</div>
+                    <div class="label-contato">GitHub</div>
+                    <div class="valor-contato">@CristophFranca</div>
+                </a>
+                <a href="https://linkedin.com/in/cristopher-franca" target="_blank" rel="noopener noreferrer" class="card-contato">
+                    <div class="icone-contato">💼</div>
+                    <div class="label-contato">LinkedIn</div>
+                    <div class="valor-contato">Cristopher França</div>
+                </a>
+            </div>
         </div>
     </section>
     
     <footer>
-        <p style="color: var(--gray); margin-bottom: 1rem;">Desenvolvido por Cristopher França</p>
-        <p style="color: var(--gray); font-size: 0.9rem;">© 2026 Cristopher França. Todos os direitos reservados.</p>
+        <p style="color: var(--muted); margin-bottom: 1rem;">© 2026 · Desenvolvido por Cristopher França</p>
+        <p style="color: var(--muted); font-size: 0.85rem;">
+            <span style="color: var(--gold);">Python</span> · 
+            <span style="color: var(--gold);">JavaScript</span> · 
+            <span style="color: var(--gold);">TypeScript</span> · 
+            <span style="color: var(--gold);">HTML/CSS</span>
+        </p>
     </footer>
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>
