@@ -108,40 +108,6 @@ document.querySelectorAll('.numero-estatistica[data-target]').forEach(el => {
     counterObserver.observe(el);
 });
 
-// ==================== HEADER SCROLL ====================
-const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-    header.style.boxShadow = window.pageYOffset > 100
-        ? '0 5px 30px rgba(0,0,0,0.3)'
-        : 'none';
-});
-
-// ==================== TYPEWRITER ====================
-window.addEventListener('load', () => {
-    const nameEl = document.querySelector('.texto-gradiente');
-    if (!nameEl) return;
-
-    const nome = 'Cristopher França';
-    let idx = 0, deleting = false;
-
-    nameEl.innerHTML = '<span class="typewriter-inner"></span><span class="cursor-digitacao">|</span>';
-    const inner = nameEl.querySelector('.typewriter-inner');
-
-    function tick() {
-        if (!deleting) {
-            inner.textContent = nome.substring(0, idx + 1);
-            idx++;
-            if (idx === nome.length) { deleting = true; setTimeout(tick, 7500); return; }
-            setTimeout(tick, 90);
-        } else {
-            inner.textContent = nome.substring(0, idx - 1);
-            idx--;
-            if (idx === 0) { deleting = false; setTimeout(tick, 600); return; }
-            setTimeout(tick, 45);
-        }
-    }
-    tick();
-});
 
 // ==================== LOG ====================
 console.log('%c🚀 Portfólio Cristopher França', 'color: #f59e0b; font-size: 20px; font-weight: bold;');
