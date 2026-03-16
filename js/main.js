@@ -108,6 +108,21 @@ document.querySelectorAll('.numero-estatistica[data-target]').forEach(el => {
     counterObserver.observe(el);
 });
 
+// ==================== ACTIVE NAV LINK ====================
+const sections = document.querySelectorAll('section[id]');
+const navLinks  = document.querySelectorAll('nav a[href^="#"]');
+
+const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(a => {
+                a.classList.toggle('ativo', a.getAttribute('href') === '#' + entry.target.id);
+            });
+        }
+    });
+}, { rootMargin: '-40% 0px -55% 0px' });
+
+sections.forEach(s => navObserver.observe(s));
 
 // ==================== LOG ====================
 console.log('%c🚀 Portfólio Cristopher França', 'color: #f59e0b; font-size: 20px; font-weight: bold;');

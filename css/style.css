@@ -5,6 +5,7 @@
     --gold-lt: #fbbf24;
     --gold-dk: #d97706;
     --amber:   #fb923c;
+    --accent:  #f59e0b;
     --dark:    #0a0f1e;
     --dark2:   #0f172a;
     --dark3:   #141e33;
@@ -216,7 +217,6 @@ h1 {
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     line-height: 1;
 }
-.numero-estatistica::after { content: attr(data-suffix); font-size: 1.6rem; }
 .label-estatistica { color: var(--muted); font-size: .82rem; margin-top: .3rem; }
 .botoes-cta {
     display: flex; gap: 1rem; flex-wrap: wrap;
@@ -259,7 +259,7 @@ h1 {
 }
 
 /* ── SECTIONS ───────────────────────────────── */
-section { padding: 7rem 5%; max-width: 1400px; margin: 0 auto; }
+section { padding: 7rem 5%; max-width: 1400px; margin: 0 auto; scroll-margin-top: 64px; }
 .cabecalho-secao { text-align: center; margin-bottom: 4rem; }
 .label-secao {
     font-family: 'JetBrains Mono', monospace; color: var(--gold);
@@ -699,3 +699,10 @@ footer {
 /* Card vira coluna com ícone no topo */
 .card-certificacao { flex-direction: column; padding: 0; overflow: hidden; }
 .conteudo-certificacao { padding: 1.6rem 1.8rem 1.8rem; display: flex; flex-direction: column; gap: .9rem; }
+
+/* ── ACTIVE NAV HIGHLIGHT ────────────────────── */
+nav a.ativo { color: var(--gold-lt); }
+nav a.ativo::after { width: 100%; }
+
+/* ── GITHUB IMG DARK FIX ─────────────────────── */
+.icone-skill[title="Markdown"] img { filter: invert(1) brightness(.85); }
