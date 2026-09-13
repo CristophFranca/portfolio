@@ -76,7 +76,6 @@ Este é meu portfólio pessoal, desenvolvido do zero para apresentar minhas habi
 - Animações de fade-in ao scroll
 - Efeitos hover nos cards
 - Header com sombra dinâmica no scroll
-- Typewriter animation no nome
 - Contadores animados nas estatísticas
 - Badge de disponibilidade configurável em `js/main.js`
 
@@ -99,6 +98,7 @@ portfolio/
     │   ├── ayla.png
     │   ├── SiXPDV.jpeg
     │   ├── fiscalremoto.png
+    │   ├── luzinete.png
     │   └── favicon.png
     └── 📁 certificates/
         └── certificado_web_designer.pdf
@@ -134,6 +134,12 @@ No arquivo `css/style.css`:
 ---
 
 ## 📊 Projetos em Destaque
+
+### 🚌 Sistema de Emissão de Passagens — Luzinete Turismo ⭐
+Sistema web desenvolvido para ajudar minha mãe no negócio dela de agenciamento de turismo. Permite emissão, controle e gerenciamento de passagens com geração de PDF, banco de dados integrado e interface simples para o dia a dia da operação. Um projeto com propósito real — tecnologia a serviço de quem eu amo.
+- **Tech Stack:** Python, Flask, SQLite, HTML/CSS/JS, PDF
+- **Status:** Ativo
+- [Ver Demo →](#) • [Ver no GitHub →](https://github.com/CristophFranca)
 
 ### 🤖 AYLA Bot
 Bot Discord completo com personalidade própria, integração com APIs externas, comandos interativos e sistema de moderação.
